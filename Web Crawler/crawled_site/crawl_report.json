@@ -1,0 +1,35 @@
+{
+  "start_url": "https://tensorschool.com/",
+  "max_pages": 3,
+  "max_depth": 3,
+  "pages_crawled": 3,
+  "crawled_urls": {
+    "https://tensorschool.com/": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "depth": 0,
+      "file_path": "C:\\Users\\Administrator\\Desktop\\Web Crawler\\crawled_site\\index_1.html",
+      "final_url": "https://tensorschool.com/",
+      "js_rendered": true
+    },
+    "https://tensorschool.com/insights": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "depth": 1,
+      "file_path": "C:\\Users\\Administrator\\Desktop\\Web Crawler\\crawled_site\\insights.html",
+      "final_url": "https://tensorschool.com/insights",
+      "js_rendered": true
+    },
+    "https://tensorschool.com/cookie-policy": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "depth": 1,
+      "file_path": "C:\\Users\\Administrator\\Desktop\\Web Crawler\\crawled_site\\cookie-policy.html",
+      "final_url": "https://tensorschool.com/cookie-policy",
+      "js_rendered": true
+    }
+  }
+}

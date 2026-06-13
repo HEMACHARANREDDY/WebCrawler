@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+
+    <!-- Primary Meta Tags (managed by react-helmet-async via data-rh) -->
+    <title data-rh="true">Tensor School - India's First AI-Native UG Program</title>
+    <meta name="title" content="Tensor School - India's First AI-Native UG Program" data-rh="true" />
+    <meta name="description" content="Build real skills, not just degrees. Tensor School offers a revolutionary 4-year UG program in Computer Science & AI with project-first curriculum, industry mentorship, and guaranteed placement support." data-rh="true" />
+    <meta name="keywords" content="engineering college, UG program, AI education, computer science, placements, tensor school" data-rh="true" />
+    <meta name="robots" content="index, follow" data-rh="true" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4338ca" />
+
+    <!-- Open Graph / Facebook (managed by react-helmet-async via data-rh) -->
+    <meta property="og:type" content="website" data-rh="true" />
+    <meta property="og:url" content="https://tensorschool.com/" data-rh="true" />
+    <meta property="og:title" content="Tensor School - India's First AI-Native UG Program" data-rh="true" />
+    <meta property="og:description" content="Build real skills, not just degrees. Tensor School offers a revolutionary 4-year UG program in CS & AI with project-first curriculum." data-rh="true" />
+    <meta property="og:image" content="https://tensorschool.com/og-image.png" data-rh="true" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Tensor School" data-rh="true" />
+    <meta property="og:locale" content="en_IN" data-rh="true" />
+
+    <meta name="google-site-verification" content="oLCoIJ6kE19kQ7E93rmnKCQFKYWhgQDmYgo8TfE8qpc" />
+
+    <!-- Twitter Card (managed by react-helmet-async via data-rh) -->
+    <meta name="twitter:card" content="summary_large_image" data-rh="true" />
+    <meta name="twitter:url" content="https://tensorschool.com/" data-rh="true" />
+    <meta name="twitter:title" content="Tensor School - India's First AI-Native UG Program" data-rh="true" />
+    <meta name="twitter:description" content="Build real skills, not just degrees. Tensor School offers a revolutionary 4-year UG program in CS & AI with project-first curriculum." data-rh="true" />
+    <meta name="twitter:image" content="https://tensorschool.com/og-image.png" data-rh="true" />
+
+    <!-- Favicons (192x192 first for Google Search, cache-busted) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png?v=1" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Note: Geist fonts removed - using Inter/Manrope as primary fonts -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      (function () {
+        var pixelId = '876397428491662';
+        var host = location.hostname;
+        function isProdHost(h) {
+          return h === 'tensorschool.com' || h === 'www.tensorschool.com';
+        }
+        if (!pixelId || !isProdHost(host)) return;
+
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', pixelId);
+        fbq('track', 'PageView');
+      })();
+    </script>
+    <!-- Capture fbclid from Facebook ad clicks into _fbc cookie -->
+    <script>
+      (function() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var fbclid = params.get('fbclid');
+          if (!fbclid) return;
+          // Always update _fbc when fbclid is present (new ad click = new attribution)
+          var subdomainIndex = (window.location.hostname.match(/\./g) || []).length;
+          var fbc = 'fb.' + subdomainIndex + '.' + Date.now() + '.' + fbclid;
+          var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
+          var domain = window.location.hostname.replace(/^www\./, '');
+          document.cookie = '_fbc=' + fbc + '; expires=' + expires + '; path=/; domain=.' + domain + '; SameSite=Lax; Secure';
+
+          // Diagnostic: capture fbclid casing for 1 week to triage Meta
+          // diagnostic "Server sending modified fbclid value in fbc parameter".
+          // See poc/docs/meta-tracking/events-manager-snapshot-2026-05-11.md A2.
+          // REMOVE after 2026-05-25 or once the root cause is identified.
+          //
+          // Endpoint: tracker.js uses `${API_URL}/api/analytics/track/batch/`
+          // because it runs in the module bundle. This inline script has no
+          // VITE_API_URL substitution, so we use the relative path -- nginx
+          // routes it to Django on the same origin in production.
+          //
+          // Referrer: strip query string before logging. tracker.js never
+          // logs referrer so there's no prior policy; we explicitly avoid
+          // leaking email-tracker tokens or session tokens in referrer URLs.
+          try {
+            var safeReferrer = (document.referrer || '').split('?')[0];
+            var beaconPayload = {
+              events: [{
+                event_type: 'meta_fbc_capture',
+                metadata: {
+                  raw_fbclid: fbclid,
+                  final_fbc: fbc,
+                  hostname: window.location.hostname,
+                  referrer: safeReferrer,
+                },
+                platform: 'tensorschool',
+              }],
+              // Opportunistic identity. Often null at first-visit fbclid
+              // landings because tracker.js (in the module bundle) hasn't
+              // initialized yet. Null device_id is a known state, not corruption.
+              device_id: localStorage.getItem('ts_device_id'),
+              session_id: sessionStorage.getItem('ts_session_id'),
+            };
+            var blob = new Blob(
+              [JSON.stringify(beaconPayload)],
+              { type: 'application/json' }
+            );
+            navigator.sendBeacon('/api/analytics/track/batch/', blob);
+          } catch (e) {}
+        } catch(e) {}
+      })();
+    </script>
+    <!-- Capture gclid from Google ad clicks into _gcl_aw cookie -->
+    <script>
+      (function() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var gclid = params.get('gclid');
+          if (!gclid) return;
+          var gcl = 'GCL.' + Math.floor(Date.now() / 1000) + '.' + gclid;
+          var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
+          var domain = window.location.hostname.replace(/^www\./, '');
+          document.cookie = '_gcl_aw=' + gcl + '; expires=' + expires + '; path=/; domain=.' + domain + '; SameSite=Lax; Secure';
+        } catch(e) {}
+      })();
+    </script>
+    <!-- End ad-attribution scripts -->
+    <script type="module" crossorigin src="/assets/index-BI2H6znn.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-D7bTEgj-.js">
+    <link rel="modulepreload" crossorigin href="/assets/motion-BaRlD5HS.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DknYxZEC.css">
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    <!-- Meta Pixel inline above. GA4 via GoogleAnalytics component. Zoho SalesIQ deferred via LazyThirdParty. -->
+  </body>
+</html>
